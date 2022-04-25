@@ -1,6 +1,7 @@
 import Banner from "./components/Banner"
 import FeaturedProducts from "./components/FeaturedProducts"
 import NewArrivals from "./components/NewArrivals"
+import SeasonMusthaves from "./components/SeasonMusthaves"
 
 const Home = () => {
     return (
@@ -9,9 +10,8 @@ const Home = () => {
             <FeaturedProducts />
             <section className="position-relative must-haves-new-arrivals">
                 <div className="container">
-                    <div className="row">
-                        <div className="col"></div>
-                        <div className="col"></div>
+                    <div className="row align-items-center">
+                        <SeasonMusthaves />
                         <div className="col-md-5">
                             <NewArrivals />
                         </div>

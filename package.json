@@ -25,6 +25,7 @@
     "dependencies": {
         "cross-env": "^7.0.3",
         "laravel-mix": "^6.0.0-beta.17",
+        "react-owl-carousel": "^2.3.3",
         "react-router-dom": "^6.3.0"
     }
 }
