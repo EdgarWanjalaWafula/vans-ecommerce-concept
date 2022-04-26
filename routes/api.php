@@ -14,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+// default name space for all routes is 'App\Http\Controllers\Api'
+$api_version = config('api.api_version');
+
+
+Route::group(["prefix" => "{$api_version}"], function() {
+    Route::prefix('products')
+        ->group(base_path('routes/api/products.php'));
+    Route::prefix('taxonomies')
+        ->group(base_path('routes/api/taxonomies.php'));
 });

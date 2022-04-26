@@ -11,7 +11,7 @@ const SeasonMusthaves = () => {
                     <div className="position-relative season-section-title">
                         <div className="position-relative">
                             <span className='section-number'>01</span>
-                            <h1 style={{ width: '75%' }} className="position-relative">this season's must-haves</h1>
+                            <h1 style={{ width: '65%' }} className="position-relative">this season's must-haves</h1>
                             <ThemeButton target='/' label='shop now' />
                         </div>
                     </div>

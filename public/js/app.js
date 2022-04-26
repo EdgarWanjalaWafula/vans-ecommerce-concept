@@ -5344,15 +5344,24 @@ var Footer = function Footer() {
         className: "row",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
           className: "col",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h5", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h6", {
             children: "corporate info"
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-          className: "col"
+          className: "col",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h6", {
+            children: "customer service"
+          })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-          className: "col"
+          className: "col",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h6", {
+            children: "follow vans"
+          })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-          className: "col"
+          className: "col",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h6", {
+            children: "sign up to vans newsletter"
+          })
         })]
       })
     })
@@ -5520,6 +5529,49 @@ var Header = function Header() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
+
+/***/ }),
+
+/***/ "./resources/js/components/DiscoverMoreBanner.jsx":
+/*!********************************************************!*\
+  !*** ./resources/js/components/DiscoverMoreBanner.jsx ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _ThemeButton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ThemeButton */ "./resources/js/components/ThemeButton.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+var DiscoverMoreBanner = function DiscoverMoreBanner(props) {
+  console.log(props);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+    className: "position-relative new-arrivals-card",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+      src: props.image,
+      alt: ""
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "title- position-relative text-white",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
+        className: "position-relative",
+        children: props.heading
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_ThemeButton__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        target: "/",
+        label: "discover more"
+      })]
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DiscoverMoreBanner);
 
 /***/ }),
 
@@ -5713,6 +5765,80 @@ var ThemeButton = function ThemeButton(props) {
 
 /***/ }),
 
+/***/ "./resources/js/components/blog/BlogItem.jsx":
+/*!***************************************************!*\
+  !*** ./resources/js/components/blog/BlogItem.jsx ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _images_images__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../images/images */ "./resources/js/images/images.jsx");
+/* harmony import */ var _BlogReadMore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BlogReadMore */ "./resources/js/components/blog/BlogReadMore.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+var BlogItem = function BlogItem() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    className: "col",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      className: "theme-blog-item position-relative d-flex align-items-center",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        className: "blog-item-body text-center p-3",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+          src: _images_images__WEBPACK_IMPORTED_MODULE_1__.homeBanner3,
+          alt: ""
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h5", {
+          className: "heading-underline position-relative",
+          children: "Online waiting to connect with you"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_BlogReadMore__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
+      })
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BlogItem);
+
+/***/ }),
+
+/***/ "./resources/js/components/blog/BlogReadMore.jsx":
+/*!*******************************************************!*\
+  !*** ./resources/js/components/blog/BlogReadMore.jsx ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+var BlogReadMore = function BlogReadMore() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    to: "/",
+    className: "blog-readmore theme-pri-color",
+    children: "read more"
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BlogReadMore);
+
+/***/ }),
+
 /***/ "./resources/js/components/product/ProductPrice.jsx":
 /*!**********************************************************!*\
   !*** ./resources/js/components/product/ProductPrice.jsx ***!
@@ -5752,7 +5878,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "homeBanner3": () => (/* reexport safe */ _public_images_front_tom_rumble_IThl1sU0Lt8_unsplash_jpg__WEBPACK_IMPORTED_MODULE_3__["default"]),
 /* harmony export */   "logo": () => (/* reexport safe */ _public_images_front_logo_png__WEBPACK_IMPORTED_MODULE_0__["default"]),
 /* harmony export */   "newArrivalsBg": () => (/* reexport safe */ _public_images_front_matt_sirr_GJs_sZriX9g_unsplash_jpg__WEBPACK_IMPORTED_MODULE_5__["default"]),
-/* harmony export */   "productThumbnail": () => (/* reexport safe */ _public_images_front_product_thumbnails_88_889815_vans_shoe_png_womens_vans_shoes_png_png__WEBPACK_IMPORTED_MODULE_4__["default"])
+/* harmony export */   "productThumbnail": () => (/* reexport safe */ _public_images_front_product_thumbnails_88_889815_vans_shoe_png_womens_vans_shoes_png_png__WEBPACK_IMPORTED_MODULE_4__["default"]),
+/* harmony export */   "uniformSection": () => (/* reexport safe */ _public_images_front_30_09_2020_BB_VN0A2Z5I18H_6_1_webp__WEBPACK_IMPORTED_MODULE_6__["default"])
 /* harmony export */ });
 /* harmony import */ var _public_images_front_logo_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/images/front/logo.png */ "./public/images/front/logo.png");
 /* harmony import */ var _public_images_front_harry_hundal_y9ctpaxexTI_unsplash_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../public/images/front/harry-hundal-y9ctpaxexTI-unsplash.jpg */ "./public/images/front/harry-hundal-y9ctpaxexTI-unsplash.jpg");
@@ -5760,6 +5887,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _public_images_front_tom_rumble_IThl1sU0Lt8_unsplash_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../public/images/front/tom-rumble-IThl1sU0Lt8-unsplash.jpg */ "./public/images/front/tom-rumble-IThl1sU0Lt8-unsplash.jpg");
 /* harmony import */ var _public_images_front_product_thumbnails_88_889815_vans_shoe_png_womens_vans_shoes_png_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../public/images/front/product-thumbnails/88-889815_vans-shoe-png-womens-vans-shoes-png.png */ "./public/images/front/product-thumbnails/88-889815_vans-shoe-png-womens-vans-shoes-png.png");
 /* harmony import */ var _public_images_front_matt_sirr_GJs_sZriX9g_unsplash_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../public/images/front/matt-sirr-GJs-sZriX9g-unsplash.jpg */ "./public/images/front/matt-sirr-GJs-sZriX9g-unsplash.jpg");
+/* harmony import */ var _public_images_front_30_09_2020_BB_VN0A2Z5I18H_6_1_webp__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../public/images/front/30-09-2020_BB_VN0A2Z5I18H_6_1.webp */ "./public/images/front/30-09-2020_BB_VN0A2Z5I18H_6_1.webp");
+
 
 
 
@@ -5805,11 +5934,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _components_Banner__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/Banner */ "./resources/js/pages/Home/components/Banner.jsx");
-/* harmony import */ var _components_FeaturedProducts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/FeaturedProducts */ "./resources/js/pages/Home/components/FeaturedProducts.jsx");
-/* harmony import */ var _components_NewArrivals__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/NewArrivals */ "./resources/js/pages/Home/components/NewArrivals.jsx");
-/* harmony import */ var _components_SeasonMusthaves__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/SeasonMusthaves */ "./resources/js/pages/Home/components/SeasonMusthaves.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _components_blog_BlogItem__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/blog/BlogItem */ "./resources/js/components/blog/BlogItem.jsx");
+/* harmony import */ var _components_DiscoverMoreBanner__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/DiscoverMoreBanner */ "./resources/js/components/DiscoverMoreBanner.jsx");
+/* harmony import */ var _images_images__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../images/images */ "./resources/js/images/images.jsx");
+/* harmony import */ var _components_Banner__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Banner */ "./resources/js/pages/Home/components/Banner.jsx");
+/* harmony import */ var _components_BlowRowBanner__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/BlowRowBanner */ "./resources/js/pages/Home/components/BlowRowBanner.jsx");
+/* harmony import */ var _components_FeaturedProducts__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/FeaturedProducts */ "./resources/js/pages/Home/components/FeaturedProducts.jsx");
+/* harmony import */ var _components_SeasonMusthaves__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/SeasonMusthaves */ "./resources/js/pages/Home/components/SeasonMusthaves.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
 
 
 
@@ -5819,16 +5954,33 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Home = function Home() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_Banner__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_FeaturedProducts__WEBPACK_IMPORTED_MODULE_1__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("section", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_Banner__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_FeaturedProducts__WEBPACK_IMPORTED_MODULE_5__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("section", {
       className: "position-relative must-haves-new-arrivals",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
         className: "container",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
           className: "row align-items-center",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_SeasonMusthaves__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_SeasonMusthaves__WEBPACK_IMPORTED_MODULE_6__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
             className: "col-md-5",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_NewArrivals__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_DiscoverMoreBanner__WEBPACK_IMPORTED_MODULE_1__["default"], {
+              image: _images_images__WEBPACK_IMPORTED_MODULE_2__.newArrivalsBg,
+              heading: "new arrivals pro skate"
+            })
+          })]
+        })
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("section", {
+      className: "position-relative theme-blog",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+        className: "container",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+          className: "row g-0",
+          children: [Array.from(Array(3), function (item, index) {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_blog_BlogItem__WEBPACK_IMPORTED_MODULE_0__["default"], {});
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+            className: "col-md-5",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_BlowRowBanner__WEBPACK_IMPORTED_MODULE_4__["default"], {})
           })]
         })
       })
@@ -5889,6 +6041,50 @@ var Banner = function Banner() {
 
 /***/ }),
 
+/***/ "./resources/js/pages/Home/components/BlowRowBanner.jsx":
+/*!**************************************************************!*\
+  !*** ./resources/js/pages/Home/components/BlowRowBanner.jsx ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _components_ThemeButton__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../components/ThemeButton */ "./resources/js/components/ThemeButton.jsx");
+/* harmony import */ var _images_images__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../images/images */ "./resources/js/images/images.jsx");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+var BlowRowBanner = function BlowRowBanner() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+    className: "position-relative blow-row-banner d-flex align-items-center",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      className: " position-relative",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h1", {
+        className: "position-relative heading-underline",
+        children: "uniform friendly shoes"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_ThemeButton__WEBPACK_IMPORTED_MODULE_0__["default"], {
+        target: "/",
+        label: "discover more"
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+      src: _images_images__WEBPACK_IMPORTED_MODULE_1__.uniformSection,
+      alt: ""
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BlowRowBanner);
+
+/***/ }),
+
 /***/ "./resources/js/pages/Home/components/FeaturedProducts.jsx":
 /*!*****************************************************************!*\
   !*** ./resources/js/pages/Home/components/FeaturedProducts.jsx ***!
@@ -5938,48 +6134,6 @@ var FeaturedProducts = function FeaturedProducts() {
 
 /***/ }),
 
-/***/ "./resources/js/pages/Home/components/NewArrivals.jsx":
-/*!************************************************************!*\
-  !*** ./resources/js/pages/Home/components/NewArrivals.jsx ***!
-  \************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _components_ThemeButton__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../components/ThemeButton */ "./resources/js/components/ThemeButton.jsx");
-/* harmony import */ var _images_images__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../images/images */ "./resources/js/images/images.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-
-
-var NewArrivals = function NewArrivals() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-    className: "position-relative new-arrivals-card",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
-      src: _images_images__WEBPACK_IMPORTED_MODULE_1__.newArrivalsBg,
-      alt: ""
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-      className: "title- position-relative text-white",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
-        className: "position-relative",
-        children: "new arrivals pro skate"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_ThemeButton__WEBPACK_IMPORTED_MODULE_0__["default"], {
-        target: "/",
-        label: "discover more"
-      })]
-    })]
-  });
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NewArrivals);
-
-/***/ }),
-
 /***/ "./resources/js/pages/Home/components/SeasonMusthaves.jsx":
 /*!****************************************************************!*\
   !*** ./resources/js/pages/Home/components/SeasonMusthaves.jsx ***!
@@ -6020,7 +6174,7 @@ var SeasonMusthaves = function SeasonMusthaves() {
               children: "01"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
               style: {
-                width: '75%'
+                width: '65%'
               },
               className: "position-relative",
               children: "this season's must-haves"
@@ -11211,6 +11365,21 @@ defineJQueryPlugin(Toast);
 
 //# sourceMappingURL=bootstrap.esm.js.map
 
+
+/***/ }),
+
+/***/ "./public/images/front/30-09-2020_BB_VN0A2Z5I18H_6_1.webp":
+/*!****************************************************************!*\
+  !*** ./public/images/front/30-09-2020_BB_VN0A2Z5I18H_6_1.webp ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/30-09-2020_BB_VN0A2Z5I18H_6_1.webp?ebf2403d8c4a9dba331de8a8d8f10ac1");
 
 /***/ }),
 
