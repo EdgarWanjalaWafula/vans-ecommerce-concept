@@ -8,8 +8,15 @@ require('./bootstrap');
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { userContext } from './contexts/useAuthContext';
+import Layout from './layout/Layout';
 import App from './routes/App';
 
+userContext
+
 if (document.getElementById('root')) {
-    ReactDOM.render(<App />, document.getElementById('root'));
+    ReactDOM.render(
+        <userContext>
+            <App />
+        </userContext>, document.getElementById('root'));
 }

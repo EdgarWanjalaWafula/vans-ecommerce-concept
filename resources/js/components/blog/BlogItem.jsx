@@ -8,7 +8,7 @@ const BlogItem = () => {
             <div className='theme-blog-item position-relative d-flex align-items-center'>
                 <div className="blog-item-body text-center p-3">
                     <img src={homeBanner3} alt="" />
-                    <h5 className='heading-underline position-relative'>Online waiting to connect with you</h5>
+                    <h5 className='small-section-heading position-relative'>Online waiting to connect with you</h5>
                     <BlogReadMore />
                 </div>
             </div>

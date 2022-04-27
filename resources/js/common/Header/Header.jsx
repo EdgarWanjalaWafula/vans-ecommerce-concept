@@ -1,4 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
+import { userContext } from "../../contexts/useAuthContext";
 import { logo } from "../../images/images";
 
 const Header = () => {
@@ -38,7 +39,10 @@ const Header = () => {
 									</li>
 									<li>
 										<Link to='/'>
-											Register <i class="bi bi-person-plus"></i>
+											<userContext.Consumer>
+												{value => value.auth.username}
+											</userContext.Consumer>
+											 <i class="bi bi-person-plus"></i>
 										</Link>
 									</li>
 									<li>
