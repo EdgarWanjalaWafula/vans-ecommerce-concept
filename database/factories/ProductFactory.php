@@ -19,9 +19,10 @@ class ProductFactory extends Factory
             'slug'  => Str::slug($title),
             'price' => $this->faker->numberBetween($min = 800, $max = 2500),
             'image' => 'no-photo.jpg',
+            'featured' => $this->faker->boolean(),
             'description'   => $this->faker->sentence(15),
-            'product_category_id'   => $this->faker->numberBetween(1,10),
-            'product_taxonomy_id'   => $this->faker->numberBetween(1,10),
+            'product_category_id'   => $this->faker->numberBetween(1,4),
+            'product_taxonomy_id'   => $this->faker->numberBetween(1,5),
         ];
     }
 }

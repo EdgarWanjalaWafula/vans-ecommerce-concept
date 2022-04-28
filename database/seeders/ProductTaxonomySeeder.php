@@ -16,12 +16,15 @@ class ProductTaxonomySeeder extends Seeder
     public function run()
     {
         $taxonomies = [
+            'New Releases', 
             'Men', 
             'Women',
             'Kids',
             'Classics',
             'Skate',
-            'customs'
+            'customs',
+            'BMX',
+            'Trainers',
         ];
 
         foreach ($taxonomies as $taxonomy) {

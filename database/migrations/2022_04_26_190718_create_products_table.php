@@ -18,6 +18,7 @@ class CreateProductsTable extends Migration
             $table->string('title');
             $table->string('slug');
             $table->string('price');
+            $table->string('featured');
             $table->string('image');
             $table->longText('description');
             $table->foreignId('product_category_id');

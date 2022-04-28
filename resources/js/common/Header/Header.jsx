@@ -1,6 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
-import { userContext } from "../../contexts/useAuthContext";
+import { userContext } from "../../contexts/UseAuthContext";
 import { logo } from "../../images/images";
+import HeaderCategories from "./components/HeaderCategories";
 
 const Header = () => {
 	return (
@@ -39,9 +40,6 @@ const Header = () => {
 									</li>
 									<li>
 										<Link to='/'>
-											<userContext.Consumer>
-												{value => value.auth.username}
-											</userContext.Consumer>
 											 <i class="bi bi-person-plus"></i>
 										</Link>
 									</li>
@@ -55,54 +53,7 @@ const Header = () => {
 							</div>
 						</div>
 					</div>
-					<div className="header-bottom-bar">
-						<div className="row">
-							<div className="col">
-								<ul className="d-flex justify-content-between">
-									<li>
-										<Link to='/'>
-											Category
-										</Link>
-									</li>
-									<li>
-										<Link to='/'>
-											Category
-										</Link>
-									</li>
-									<li>
-										<Link to='/'>
-											Category
-										</Link>
-									</li>
-									<li>
-										<Link to='/'>
-											Category
-										</Link>
-									</li>
-									<li>
-										<Link to='/'>
-											Category
-										</Link>
-									</li>
-									<li>
-										<Link to='/'>
-											Category
-										</Link>
-									</li>
-									<li>
-										<Link to='/'>
-											Category
-										</Link>
-									</li>
-									<li>
-										<Link to='/'>
-											#houseofvans
-										</Link>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
+					<HeaderCategories />
 				</div>
 			</header>
 

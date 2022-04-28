@@ -15,6 +15,10 @@ class ProductCategory extends Model
         'product_taxonomy_id'
     ];
 
+    public function productCategory(){
+        return $this->hasMany(Product::class);
+    }
+
     public function productSubCategories(){
         return $this->hasMany(ProductSubCategory::class);
     }

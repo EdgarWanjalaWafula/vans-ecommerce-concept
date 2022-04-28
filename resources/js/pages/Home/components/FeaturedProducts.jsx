@@ -1,7 +1,10 @@
+import { useContext } from "react"
 import ProductCard from "../../../components/ProductCard"
 import ProductGenderFilter from "../../../components/ProductGenderFilter"
+import { UseProductContext } from "../../../contexts/UseProductContext"
 
 const FeaturedProducts = () => {
+    const products = useContext(UseProductContext)
     return (
         <section className="shop-home-featured-products theme-padding">
             <div className="container">
@@ -15,8 +18,8 @@ const FeaturedProducts = () => {
                 </div>
                 <div className="row g-0">
                     {
-                        Array.from(Array(5), (item, index) => (
-                            <ProductCard />
+                        products.filter(product => product.featured == 1).map(({id, ...rest}, index) => (
+                            index < 5 ? <ProductCard key={id} {...rest} /> : null
                         ))
                     }
                 </div>
