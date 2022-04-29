@@ -16,10 +16,21 @@ class ProductCategorySeeder extends Seeder
     public function run()
     {
         $categories = [
-           'featured', 
-           'shoes', 
-           'clothing', 
-           'accessories'
+            'Hats and beanies', 
+            'Backpacks',
+            'T-shirts',
+            'Socks', 
+            'Sun glasses',
+            'Hoodies and jackets',
+            'BMX',
+            'Surf',
+            'Pants and sweatpants',
+            'Wallets and belts',
+            'Kids (8-14)years',
+            'Little kids (2-7)years',
+            'Toddler',
+            'Dresses and skirts',
+            'Laces and shoe care',
         ];
 
         foreach ($categories as $category) {

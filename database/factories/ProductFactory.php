@@ -18,10 +18,10 @@ class ProductFactory extends Factory
             'title' => $title,
             'slug'  => Str::slug($title),
             'price' => $this->faker->numberBetween($min = 800, $max = 2500),
-            'image' => 'no-photo.jpg',
+            'image' => $this->faker->randomElement(['88-889815_vans-shoe-png-womens-vans-shoes-png.png', 'vans-moma.png']),
             'featured' => $this->faker->boolean(),
             'description'   => $this->faker->sentence(15),
-            'product_category_id'   => $this->faker->numberBetween(1,4),
+            'product_category_id'   => $this->faker->numberBetween(1,15),
             'product_taxonomy_id'   => $this->faker->numberBetween(1,5),
         ];
     }
