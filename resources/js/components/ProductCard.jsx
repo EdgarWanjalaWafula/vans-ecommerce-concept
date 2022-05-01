@@ -8,7 +8,7 @@ const ProductCard = (props) => {
     const location = useLocation()
     return (
         <div className={`${location.pathname == '/' ? 'col' : 'col-md-3'}`}>
-            <Link to={`/single-product/${props.slug}/${props.key}`} className="shop-product-card text-dark w-100 h-100 position-relative d-flex align-items-center justify-content-center">
+            <Link to={`/view-product/${props.slug}`} className="shop-product-card text-dark w-100 h-100 position-relative d-flex align-items-center justify-content-center">
                 <div className="product-view-addtocart">
                     <ProductQuickView />
                     <ProductAddToCart />
