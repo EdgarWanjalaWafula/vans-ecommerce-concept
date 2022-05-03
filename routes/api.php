@@ -17,10 +17,15 @@ use Illuminate\Support\Facades\Route;
 // default name space for all routes is 'App\Http\Controllers\Api'
 $api_version = config('api.api_version');
 
+Route::post('users/signin', 'Api\Auth\LoginController@login');
 
 Route::group(["prefix" => "{$api_version}"], function() {
     Route::prefix('products')
         ->group(base_path('routes/api/products.php'));
     Route::prefix('taxonomies')
         ->group(base_path('routes/api/taxonomies.php'));
+});
+
+Route::group(['middleware' => 'auth:api'], function() { 
+    Route::post('users/logout', 'Api\Auth\LoginController@logout');
 });

@@ -8,12 +8,12 @@ const HeaderCategoriesDropdown = (props) => {
         <div className="header-category-dropdown">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-5">
+                    <div className="col-md-4">
                         <ul>
                             {
                                 categories.map(({ id, title, slug }, index) => (
                                     <li key={id}>
-                                        <Link 
+                                        <Link
                                             state={{ id: id, pagetitle: title }}
                                             to={`/collection/${slug}`}
                                         >{title}</Link>
@@ -21,21 +21,23 @@ const HeaderCategoriesDropdown = (props) => {
                                 ))
                             }
                         </ul>
-                        <button className="btn"><h6 className="m-0">Shop all</h6></button>
+                        <button className="btn"><h6 className="m-0 text-dark">Shop all</h6></button>
                     </div>
                     <div className="col">
-                            {/* <ul className="d-flex cat-related-products">
-                                <li>
-                                    <Link to='/'>
-                                        <img src={headerCategoriesBanner} alt="" />
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to='/'>
-                                        <img src={headerCategoriesBanner2} alt="" />
-                                    </Link>
-                                </li>
-                            </ul> */}
+                        <ul className="d-flex cat-related-products h-100">
+                            <li className='position-relative'>
+                                <Link to='/'>
+                                    <img className='position-absolute h-100' src={headerCategoriesBanner} alt="" />
+                                    <h6>product name</h6>
+                                </Link>
+                            </li>
+                            <li className='position-relative'>
+                                <Link to='/'>
+                                    <img className='position-absolute h-100' src={headerCategoriesBanner2} alt="" />
+                                    <h6>product name</h6>
+                                </Link>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

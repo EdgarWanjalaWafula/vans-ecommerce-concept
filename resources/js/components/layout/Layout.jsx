@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Footer from '../common/Footer/Footer'
-import Header from '../common/Header/Header'
-import { useProducts } from '../data/useApiData'
-import { UseProductContext } from '../contexts/UseProductContext'
+import Footer from '../../common/Footer/Footer'
+import Header from '../../common/Header/Header'
+import { useProducts } from '../../data/useApiData'
+import { UseProductContext } from '../../contexts/UseProductContext'
 import { useLocation } from 'react-router-dom'
-import Pagetitle from '../common/pagetitle/Pagetitle'
+import Pagetitle from '../../common/pagetitle/Pagetitle'
 
 const props = {
     children: PropTypes.any

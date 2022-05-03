@@ -1,7 +1,8 @@
-import { Outlet, Link } from "react-router-dom";
 import { userContext } from "../../contexts/UseAuthContext";
 import { logo } from "../../images/images";
 import HeaderCategories from "./components/HeaderCategories";
+import HeaderTopLinks from './components/HeaderTopLinks'
+import { Outlet, Link } from "react-router-dom";
 
 const Header = () => {
 	return (
@@ -16,48 +17,13 @@ const Header = () => {
 								</Link>
 							</div>
 							<div className="col-md-10">
-								<ul className="d-flex">
-									<li>
-										<span><i className="bi bi-search"></i> Search...</span>
-									</li>
-									<li>
-										<span>Rest of Africa <i class="bi bi-chevron-down"></i></span>
-									</li>
-									<li>
-										<Link to='/'>
-											Store locator <i class="bi bi-geo-alt"></i>
-										</Link>
-									</li>
-									<li>
-										<Link to='/'>
-											Help <i class="bi bi-question"></i>
-										</Link>
-									</li>
-									<li>
-										<Link to='/'>
-											Login <i class="bi bi-lock"></i>
-										</Link>
-									</li>
-									<li>
-										<Link to='/'>
-											 <i class="bi bi-person-plus"></i>
-										</Link>
-									</li>
-									<li>
-										<div className="shop-header-cart position-relative">
-											<i class="bi bi-basket3"></i>
-											<span>4</span>
-										</div>
-									</li>
-								</ul>
+								<HeaderTopLinks />
 							</div>
 						</div>
 					</div>
 					<HeaderCategories />
 				</div>
 			</header>
-
-
 			<Outlet />
 		</>
 	)
