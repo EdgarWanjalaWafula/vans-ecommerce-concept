@@ -1,5 +1,5 @@
 const ProductQuickView=()=>{
-    return (<i class="bi bi-eye"></i>)
+    return (<i className="bi bi-eye"></i>)
 }
 
 export default ProductQuickView

@@ -21,9 +21,6 @@ class ProductTaxonomySeeder extends Seeder
             'Women',
             'Kids',
             'Classics',
-            'Skate',
-            'customs',
-            'BMX',
             'Trainers',
         ];
 

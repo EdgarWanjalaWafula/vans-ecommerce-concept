@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Outlet, Link } from "react-router-dom";
+import { UseCartContext } from '../../../contexts/UseCartContext';
 
 const links = [
     {
@@ -40,14 +41,15 @@ const links = [
     },
     {
         title: 'Cart',
-        icon: 'basket3',
-        target: '/',
+        icon: 'bag',
+        target: '/page/cart',
         dropdown: null
     }
 ]
 
 const HeaderTopLinks = () => {
-    console.log(links)
+    const { items } = useContext(UseCartContext)
+    const count = items == null ? 0 : items.length
     return (
         <ul className="d-flex">
             {
@@ -56,13 +58,15 @@ const HeaderTopLinks = () => {
                         {
                             links.length - 1 === index
                                 ? <div className="shop-header-cart position-relative">
-                                    <i class="bi bi-basket3"></i>
-                                    <span>4</span>
+                                    <Link to={target}>
+                                        <i className={`bi bi-${icon}`}></i>
+                                        <span>{count}</span>
+                                    </Link>
                                 </div>
                                 : target == null
-                                    ? <span>{title}<i class={`bi bi-${icon}`}></i></span>
+                                    ? <span>{title}<i className={`bi bi-${icon}`}></i></span>
                                     : <Link to={target}>
-                                        <span>{title}<i class={`bi bi-${icon}`}></i></span>
+                                        <span>{title}<i className={`bi bi-${icon}`}></i></span>
                                     </Link>
                         }
                     </li>

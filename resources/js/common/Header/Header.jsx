@@ -16,7 +16,7 @@ const Header = () => {
 									<img src={logo} alt="" />
 								</Link>
 							</div>
-							<div className="col-md-10">
+							<div className="col-md-9 offset-1">
 								<HeaderTopLinks />
 							</div>
 						</div>

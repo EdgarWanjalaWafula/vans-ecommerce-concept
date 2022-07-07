@@ -17,7 +17,7 @@ const SeasonMusthaves = () => {
                     </div>
                     <div className="season-slider">
                         <OwlCarousel className='owl-theme' nav items={1} margin={10}>
-                            <div class='item'>
+                            <div className='item'>
                                 <div className="season-slider-card">
                                     <img src={productThumbnail} alt="" />
                                     <div className="season-slider-body text-center">
@@ -26,7 +26,7 @@ const SeasonMusthaves = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div class='item'>
+                            <div className='item'>
                                 <div className="season-slider-card">
                                     <img src={productThumbnail} alt="" />
                                     <div className="season-slider-body text-center">
@@ -35,7 +35,7 @@ const SeasonMusthaves = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div class='item'>
+                            <div className='item'>
                                 <div className="season-slider-card">
                                     <img src={productThumbnail} alt="" />
                                     <div className="season-slider-body text-center">
@@ -44,7 +44,7 @@ const SeasonMusthaves = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div class='item'>
+                            <div className='item'>
                                 <div className="season-slider-card">
                                     <img src={productThumbnail} alt="" />
                                     <div className="season-slider-body text-center">

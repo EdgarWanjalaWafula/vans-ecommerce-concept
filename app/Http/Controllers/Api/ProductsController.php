@@ -13,4 +13,9 @@ class ProductsController extends Controller
 
         return response()->json($products, 200);
     }
+
+    public function productBySlug($request){
+        $product = Product::where('slug', $request)->first();
+        return response()->json($product, 200);
+    }
 }

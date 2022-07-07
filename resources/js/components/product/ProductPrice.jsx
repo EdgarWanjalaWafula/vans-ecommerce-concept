@@ -1,6 +1,10 @@
-const ProductPrice=()=>{
-    return(
-        <span className="price">Ksh. 120</span>
+const ProductPrice = (prop) => {
+    const { price } = prop
+
+    return (
+        <>
+            Ksh.{parseInt(price).toLocaleString()}
+        </>
     )
 }
 

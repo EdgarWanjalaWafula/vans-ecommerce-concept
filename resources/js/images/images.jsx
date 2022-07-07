@@ -8,16 +8,26 @@ import uniformSection from '../../../public/images/front/30-09-2020_BB_VN0A2Z5I1
 import pageTitleBanner from '../../../public/images/front/karl-muscat-fKtyXX7isY0-unsplash.jpg'
 import headerCategoriesBanner from '../../../public/images/front/maxresdefasult.jpg'
 import headerCategoriesBanner2 from '../../../public/images/front/vans-shoes.png'
+import image1 from '../../../public/images/front/product-thumbnails/88-889815_vans-shoe-png-womens-vans-shoes-png.png'
+import image2 from '../../../public/images/front/product-thumbnails/vans_PNG19.png'
+import image3 from '../../../public/images/front/product-thumbnails/Vans-Transparent-Free-PNG.png'
+import image4 from '../../../public/images/front/product-thumbnails/vans-moma.png'
+import authBg from '../../../public/images/front/vans-old-skool-white-on-foot.webp'
 
 export {
     logo,
     homeBanner,
     homeBanner2,
-    homeBanner3, 
-    productThumbnail, 
-    newArrivalsBg, 
+    homeBanner3,
+    productThumbnail,
+    newArrivalsBg,
     uniformSection,
-    pageTitleBanner, 
+    pageTitleBanner,
     headerCategoriesBanner,
-    headerCategoriesBanner2
+    headerCategoriesBanner2,
+    image1,
+    image2,
+    image3,
+    image4, 
+    authBg
 }

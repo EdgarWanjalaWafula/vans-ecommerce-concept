@@ -27,10 +27,10 @@ const Login = () => {
 	}
 
 	const handleSession = (props) => {
-		const {status, token} = props
+		const { status, token } = props
 
 		if (status == 'success') {
-			localStorage.setItem('token',token)
+			localStorage.setItem('token', token)
 			navigate('/')
 		}
 	}
@@ -38,28 +38,40 @@ const Login = () => {
 	return (
 		<Section>
 			<div className="row">
-				<div className="col-md-4 offset-4">
-					<form onSubmit={handleSubmit}>
-						<div class="form-group">
-							<label for="" class="form-label">Email</label>
-							<input
-								type="email"
-								name="" id=""
-								value={email}
-								class="form-control"
-								onChange={(e) => setEmail(e.target.value)} />
+				<div className="col-md-8 offset-2">
+					<div className="auth-bg text-white">
+						<div className="row align-items-center">
+							<div className="col">
+								<h3>Dont have an account?</h3>
+								<p className='small'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore in, facilis eos possimus quasi nisi dicta commodi accusantium, vitae totam officia.</p>
+							</div>
+							<div className="col">
+								<form className='position-relative' onSubmit={handleSubmit}>
+									<div className="form-content">
+										<div className="form-group">
+											<input
+												type="email"
+												name="" id=""
+												value={email}
+												className="form-control rounded-0"
+												placeholder='Email'
+												onChange={(e) => setEmail(e.target.value)} />
+										</div>
+										<div className="form-group">
+											<input
+												type="password"
+												name=""
+												value={password}
+												className="form-control rounded-0"
+												placeholder='Password'
+												onChange={(e) => setPassword(e.target.value)} />
+										</div>
+										
+									</div>
+								</form>
+							</div>
 						</div>
-						<div class="form-group">
-							<label for="" class="form-label">Password</label>
-							<input
-								type="password"
-								name=""
-								value={password}
-								class="form-control"
-								onChange={(e) => setPassword(e.target.value)} />
-						</div>
-						<button type="submit" class="btn btn-primary">Submit</button>
-					</form>
+					</div>
 				</div>
 			</div>
 		</Section>

@@ -7,7 +7,7 @@
     <title>{{'Vans - Ecommerce Concept'}}</title>
     <link rel="stylesheet" href="{{ asset('/css/front.css') }}">
 </head>
-<body>
+<body class="position-relative">
     <div id="root">
         @yield('content')
     </div>

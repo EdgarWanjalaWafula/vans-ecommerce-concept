@@ -2,7 +2,6 @@ import React from 'react'
 import ThemeButton from './ThemeButton'
 
 const DiscoverMoreBanner = (props) => {
-    console.log(props)
     return (
         <div className="position-relative new-arrivals-card">
             <img src={props.image} alt="" />

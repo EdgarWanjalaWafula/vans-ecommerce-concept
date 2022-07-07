@@ -8,20 +8,19 @@ const HeaderCategories = () => {
     return (
         <div className="header-bottom-bar">
             <div className="row">
-                <div className="col-md-8">
+                <div className="col-md-6">
                     <ul className="d-flex justify-content-between">
                         {
                             taxonomies.map(({title, id, slug, product_categories}, index) => (
                                 <li key={id}>
                                     <Link to={`/shop-for/${slug}`} >
                                         {title}
-                                        {product_categories.length > 0 ? <i class="bi bi-plus"></i> : null }
+                                        {product_categories.length > 0 ? <i className="bi bi-plus"></i> : null }
                                     </Link>
                                     {product_categories.length > 0 ? <HeaderCategoriesDropdown props={product_categories}/> : null }
                                 </li>
                             ))
                         }
-
                     </ul>
                 </div>
             </div>
